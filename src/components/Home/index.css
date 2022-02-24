@@ -1,0 +1,26 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.home-sm-image {
+  display: flex;
+}
+
+.home-lg-image {
+  display: none;
+  width: 100%;
+  height: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .home-sm-image {
+    display: none;
+  }
+
+  .home-lg-image {
+    display: flex;
+  }
+}
